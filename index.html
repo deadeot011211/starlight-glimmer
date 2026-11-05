@@ -1,0 +1,325 @@
+```html
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plushy Bnnuy - Toko Boneka Lucu & Custom</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Family Google: Quicksand & Fredoka -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'bnnuy-pink': '#FFB7C5',
+                        'bnnuy-pink-soft': '#FFF0F3',
+                        'bnnuy-pink-dark': '#FF6B8B',
+                        'bnnuy-yellow': '#FFE17D',
+                        'bnnuy-yellow-soft': '#FFF9E6',
+                        'bnnuy-cream': '#FAF6F0',
+                    },
+                    fontFamily: {
+                        'fredoka': ['Fredoka', 'sans-serif'],
+                        'quicksand': ['Quicksand', 'sans-serif'],
+                    },
+                    animation: {
+                        'bounce-slow': 'bounce 2s infinite',
+                        'pulse-gentle': 'pulse 3s infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #FFF0F3;
+        }
+        h1, h2, h3, h4, h5, h6, .font-title {
+            font-family: 'Fredoka', cursive;
+        }
+        .cute-card {
+            border: 3px solid #FFF;
+            box-shadow: 0 10px 25px -5px rgba(255, 107, 139, 0.15);
+        }
+        .cute-border {
+            border: 3px dashed #FFB7C5;
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FFF0F3;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #FFB7C5;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #FF6B8B;
+        }
+    </style>
+</head>
+<body class="text-gray-700 antialiased selection:bg-bnnuy-pink selection:text-white">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-bnnuy-yellow text-amber-900 py-2 px-4 text-center text-xs md:text-sm font-semibold tracking-wide flex items-center justify-center gap-2">
+        <i class="fa-solid fa-sparkles text-amber-600"></i>
+        <span>Buka Setiap Hari: 09.00 - 21.00 WIB | Terima Custom Boneka dari Foto! 📸✨</span>
+        <i class="fa-solid fa-sparkles text-amber-600"></i>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b-4 border-b-bnnuy-pink-soft shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Logo -->
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-bnnuy-pink rounded-full flex items-center justify-center shadow-inner text-white text-2xl font-title animate-bounce-slow">
+                        🐰
+                    </div>
+                    <div>
+                        <span class="font-title text-2xl md:text-3xl text-bnnuy-pink-dark tracking-wide">Plushy Bnnuy</span>
+                        <p class="text-[10px] text-pink-400 font-bold tracking-wider uppercase">Kawaii Plushie & Custom Shop</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex items-center gap-8 font-title text-gray-600 font-medium">
+                    <a href="#home" class="hover:text-bnnuy-pink-dark transition-colors">Beranda</a>
+                    <a href="#custom" class="hover:text-bnnuy-pink-dark transition-colors">Custom Boneka</a>
+                    <a href="#products" class="hover:text-bnnuy-pink-dark transition-colors">Koleksi Original</a>
+                    <a href="#size-guide" class="hover:text-bnnuy-pink-dark transition-colors">Ukuran & Harga</a>
+                    <a href="#testimonials" class="hover:text-bnnuy-pink-dark transition-colors">Testimoni</a>
+                </nav>
+
+                <!-- Contact Direct Button -->
+                <div class="flex items-center gap-3">
+                    <a href="https://wa.me/6289602031132?text=Halo%20Plushy%20Bnnuy!%20Saya%20mau%20tanya-tanya%20boneka%20lucunya%20🐰" target="_blank" class="bg-bnnuy-pink-dark hover:bg-pink-600 text-white font-title px-5 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all duration-300 flex items-center gap-2 transform hover:-translate-y-0.5 text-sm md:text-base">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>089602031132</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative overflow-hidden py-12 md:py-20 bg-gradient-to-b from-white via-bnnuy-pink-soft to-white">
+        <!-- Floating decorative elements -->
+        <div class="absolute top-10 left-10 text-bnnuy-pink opacity-40 text-4xl animate-pulse">🌸</div>
+        <div class="absolute top-1/3 right-10 text-bnnuy-yellow opacity-60 text-5xl animate-bounce-slow">⭐</div>
+        <div class="absolute bottom-10 left-1/4 text-bnnuy-pink-dark opacity-30 text-3xl">🎀</div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                
+                <!-- Left Text Column -->
+                <div class="text-center md:text-left space-y-6">
+                    <div class="inline-flex items-center gap-2 bg-bnnuy-yellow-soft border-2 border-bnnuy-yellow px-4 py-1.5 rounded-full text-amber-800 text-sm font-semibold">
+                        <span>✨ Teman Peluk Paling Imut & Lembut ✨</span>
+                    </div>
+                    <h1 class="font-title text-4xl sm:text-5xl lg:text-6xl text-gray-800 leading-tight">
+                        Wujudkan Boneka Impianmu di <span class="text-bnnuy-pink-dark underline decoration-wavy decoration-bnnuy-yellow">Plushy Bnnuy!</span> 🐰💖
+                    </h1>
+                    <p class="text-gray-600 text-base sm:text-lg leading-relaxed max-w-xl">
+                        Toko spesialis boneka imut original dan <strong class="text-bnnuy-pink-dark">Custom Boneka dari Foto</strong> pilihanmu! Dibuat dengan bahan super lembut berkualitas dari ukuran <strong>S hingga XXXL</strong>.
+                    </p>
+
+                    <!-- Store Info Cards -->
+                    <div class="grid grid-cols-2 gap-3 pt-2 max-w-md mx-auto md:mx-0">
+                        <div class="bg-white p-3 rounded-2xl border-2 border-pink-100 flex items-center gap-3 shadow-sm">
+                            <div class="w-10 h-10 rounded-xl bg-bnnuy-pink-soft flex items-center justify-center text-bnnuy-pink-dark">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="text-left">
+                                <p class="text-[10px] text-gray-400 font-bold uppercase">Alamat Toko</p>
+                                <p class="text-xs font-semibold text-gray-700 leading-tight">Equestria Jln. Lewidahu No.08</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-3 rounded-2xl border-2 border-amber-100 flex items-center gap-3 shadow-sm">
+                            <div class="w-10 h-10 rounded-xl bg-bnnuy-yellow-soft flex items-center justify-center text-amber-600">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div class="text-left">
+                                <p class="text-[10px] text-gray-400 font-bold uppercase">Jam Buka</p>
+                                <p class="text-xs font-semibold text-gray-700 leading-tight">09.00 - 21.00 WIB</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Call to Action Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 pt-4">
+                        <a href="#custom" class="w-full sm:w-auto bg-bnnuy-pink-dark hover:bg-pink-600 text-white font-title text-lg px-8 py-3.5 rounded-full shadow-lg hover:shadow-pink-300 transition-all text-center flex items-center justify-center gap-2 transform hover:-translate-y-1">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            <span>Pesan Custom Sekarang</span>
+                        </a>
+                        <a href="#products" class="w-full sm:w-auto bg-bnnuy-yellow hover:bg-amber-300 text-amber-900 font-title text-lg px-8 py-3.5 rounded-full shadow-md hover:shadow-amber-200 transition-all text-center flex items-center justify-center gap-2 transform hover:-translate-y-1">
+                            <i class="fa-solid fa-store"></i>
+                            <span>Lihat Etalase</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Hero Illustration -->
+                <div class="relative flex justify-center">
+                    <div class="w-72 h-72 sm:w-96 sm:h-96 bg-bnnuy-yellow rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 filter blur-xl opacity-60"></div>
+                    
+                    <div class="relative bg-white p-6 sm:p-8 rounded-3xl cute-card border-4 border-white shadow-2xl max-w-sm w-full text-center">
+                        <!-- Hero Plushy SVG Banner -->
+                        <div class="bg-bnnuy-pink-soft rounded-2xl p-6 mb-4 relative overflow-hidden">
+                            <span class="absolute top-2 right-2 bg-bnnuy-yellow text-amber-900 font-title text-xs px-3 py-1 rounded-full shadow">BEST SELLER</span>
+                            <svg class="w-48 h-48 mx-auto filter drop-shadow-md" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Bunny Ears -->
+                                <ellipse cx="70" cy="45" rx="18" ry="40" fill="#FFB7C5" stroke="#FF6B8B" stroke-width="4"/>
+                                <ellipse cx="70" cy="45" rx="10" ry="25" fill="#FFF0F3"/>
+                                <ellipse cx="130" cy="45" rx="18" ry="40" fill="#FFB7C5" stroke="#FF6B8B" stroke-width="4"/>
+                                <ellipse cx="130" cy="45" rx="10" ry="25" fill="#FFF0F3"/>
+                                <!-- Head -->
+                                <circle cx="100" cy="115" r="55" fill="#FFFFFF" stroke="#FFB7C5" stroke-width="5"/>
+                                <!-- Cheeks -->
+                                <circle cx="70" cy="125" r="10" fill="#FFB7C5" opacity="0.6"/>
+                                <circle cx="130" cy="125" r="10" fill="#FFB7C5" opacity="0.6"/>
+                                <!-- Eyes -->
+                                <ellipse cx="80" cy="110" rx="4" ry="7" fill="#4A4A4A"/>
+                                <ellipse cx="120" cy="110" rx="4" ry="7" fill="#4A4A4A"/>
+                                <circle cx="82" cy="108" r="2" fill="#FFFFFF"/>
+                                <circle cx="122" cy="108" r="2" fill="#FFFFFF"/>
+                                <!-- Nose & Mouth -->
+                                <polygon points="97,118 103,118 100,122" fill="#FF6B8B"/>
+                                <path d="M 94 124 Q 100 130 100 124 Q 100 130 106 124" stroke="#FF6B8B" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                                <!-- Bow tie -->
+                                <polygon points="85,155 100,162 85,169" fill="#FFE17D"/>
+                                <polygon points="115,155 100,162 115,169" fill="#FFE17D"/>
+                                <circle cx="100" cy="162" r="4" fill="#FF6B8B"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-title text-2xl text-gray-800">Bnnuy Giant Pillow</h3>
+                        <p class="text-sm text-gray-500 mt-1">Sangat empuk, cocok untuk dipeluk!</p>
+                        <div class="mt-4 flex items-center justify-between">
+                            <span class="text-xs bg-pink-100 text-bnnuy-pink-dark font-bold px-3 py-1 rounded-full">Mulai Rp45.000</span>
+                            <span class="text-amber-500 font-bold text-sm"><i class="fa-solid fa-star"></i> 5.0 (120+ Ulasan)</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Order Section (Dari Foto) -->
+    <section id="custom" class="py-16 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="bg-bnnuy-pink-soft text-bnnuy-pink-dark font-title text-sm px-4 py-1.5 rounded-full border border-pink-200">
+                    📸 Fitur Unggulan Toko Kami
+                </span>
+                <h2 class="font-title text-3xl sm:text-4xl text-gray-800 mt-3">
+                    Layanan Custom Boneka Dari Foto!
+                </h2>
+                <p class="text-gray-600 mt-2">
+                    Kirim foto peliharaan, karakter favorit, atau orang tersayang, kami ubah menjadi boneka plushy yang sangat imut!
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Step 1 -->
+                <div class="bg-bnnuy-pink-soft p-8 rounded-3xl cute-card text-center relative border-2 border-pink-200">
+                    <div class="w-16 h-16 bg-bnnuy-pink-dark text-white rounded-2xl font-title text-2xl flex items-center justify-center mx-auto mb-5 shadow-lg transform -rotate-6">
+                        1
+                    </div>
+                    <div class="text-4xl mb-3">📸</div>
+                    <h3 class="font-title text-xl text-gray-800 mb-2">Kirim Foto Pilihanmu</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        Kirimkan foto berkualitas jelas via Whatsapp (Foto hewan peliharaan, gambar anime, atau karakter kartun).
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-bnnuy-yellow-soft p-8 rounded-3xl cute-card text-center relative border-2 border-amber-200">
+                    <div class="w-16 h-16 bg-bnnuy-yellow text-amber-900 rounded-2xl font-title text-2xl flex items-center justify-center mx-auto mb-5 shadow-lg transform rotate-6">
+                        2
+                    </div>
+                    <div class="text-4xl mb-3">📏</div>
+                    <h3 class="font-title text-xl text-gray-800 mb-2">Pilih Ukuran (S - XXXL)</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        Tentukan ukuran boneka sesuai keinginanmu. Mulai dari mini keychain (S) sampai ukuran raksasa (XXXL)!
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-bnnuy-pink-soft p-8 rounded-3xl cute-card text-center relative border-2 border-pink-200">
+                    <div class="w-16 h-16 bg-bnnuy-pink-dark text-white rounded-2xl font-title text-2xl flex items-center justify-center mx-auto mb-5 shadow-lg transform -rotate-6">
+                        3
+                    </div>
+                    <div class="text-4xl mb-3">🎁</div>
+                    <h3 class="font-title text-xl text-gray-800 mb-2">Boneka Dikirim ke Rumah</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        Tim pengrajin kami akan membuat boneka serapi mungkin dan siap dikirim langsung dari Equestria Lewidahu!
+                    </p>
+                </div>
+            </div>
+
+            <!-- Custom Form Card Simulation -->
+            <div class="mt-12 bg-gradient-to-r from-bnnuy-pink-soft via-white to-bnnuy-yellow-soft rounded-3xl p-6 sm:p-10 border-4 border-white shadow-xl max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="font-title text-2xl text-bnnuy-pink-dark mb-3">Ingin Konsultasi Custom? 💬</h3>
+                        <p class="text-sm text-gray-600 mb-4 leading-relaxed">
+                            Klik tombol di bawah ini untuk terhubung langsung dengan admin kami via WhatsApp. Kirim foto dan dapatkan estimasi harga instant!
+                        </p>
+                        <ul class="text-xs text-gray-600 space-y-2 mb-6 font-semibold">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Bahan Velboa & Yapex High Quality</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Isian Dakron Silicon 100% Empuk</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Jahitan Rapi & Bergaransi</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-2xl cute-border text-center">
+                        <label class="block font-title text-gray-700 text-base mb-2">Format Pemesanan Custom:</label>
+                        <div class="text-left bg-gray-50 p-3 rounded-xl text-xs text-gray-600 font-mono mb-4 border">
+                            Nama: <br>
+                            Ukuran: (S/M/L/XL/XXL/XXXL) <br>
+                            Lampiran Foto: [Kirim via WA] <br>
+                            Catatan Khusus:
+                        </div>
+                        <a href="https://wa.me/6289602031132?text=Halo%20Admin%20Plushy%20Bnnuy!%20Saya%20mau%20order%20Custom%20Boneka%20dari%20Foto%20📸" target="_blank" class="w-full bg-green-500 hover:bg-green-600 text-white font-title py-3 px-6 rounded-xl shadow-md transition-all flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>Chat Seller via WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Size Guide & Pricing Calculator -->
+    <section id="size-guide" class="py-16 bg-bnnuy-pink-soft/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="bg-bnnuy-yellow text-amber-900 font-title text-sm px-4 py-1.5 rounded-full shadow-sm">
+                    📐 Panduan Ukuran & Harga
+                </span>
+                <h2 class="font-title text-3xl sm:text-4xl text-gray-800 mt-3">
+                    Pilihan Ukuran Boneka Lengkap
+                </h2>
+                <p class="text-gray-600 mt-2">
+                    Harga transparan mulai dari <strong class="text-bnnuy-pink-dark">Rp45.000 ke atas</strong> sesuai ukuran pilihanmu.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+                <!-- Size S -->
+                <div class="bg-white p-4 rounded-2xl text-center border-2 border-pink-100 shadow-sm hover:border-bnnuy-pink transition-all">
+                    <spa
